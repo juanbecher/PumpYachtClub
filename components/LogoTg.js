@@ -36,6 +36,7 @@ const LogoTg = () => {
       <a
         href="https://t.me/PumpYachtClub"
         target="_blank"
+        rel="noreferrer"
       >
         <img src="/telegram64.png" alt="Contactar TG"></img>
       </a>

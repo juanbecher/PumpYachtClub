@@ -69,7 +69,7 @@ export const Fondo = () => {
         <h1>Pump Yacht Club</h1>
         <h2>Lets pump this fucking yacht⛵</h2>
         <div className="contenedorBoton">
-        <a href="https://poocoin.app/" target="_blank"><Button className="boton" type="primary" size="large" style={{height: 55,
+        <a href="https://poocoin.app/" rel="noreferrer" target="_blank"><Button className="boton" type="primary" size="large" style={{height: 55,
     width: 200}}
     
 >
