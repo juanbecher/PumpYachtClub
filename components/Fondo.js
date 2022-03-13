@@ -16,24 +16,38 @@ const FondoComponent = styled.div`
   }
   .contenedorTitulo {
     margin: auto;
+    margin-top: 25%;
   }
   h1 {
     margin: 10px 0;
     color: black;
-    font-size: 60px;
-    margin-top:50px;
+    font-size: 40px;
+    margin-top: 50px;
   }
   h2 {
     margin: 10px 0;
+    margin-top: 10px;
     color: grey;
-    font-size: 30px;
+
     font-style: italic;
     text-align: center;
   }
   .contenedorBoton {
-    margin-top:50px;
+    margin-top: 50px;
     display: flex;
     justify-content: center;
+  }
+  @media (min-width: 768px) {
+    .contenedorTitulo {
+      margin: auto;
+    }
+
+    h1 {
+      font-size: 60px;
+    }
+    h2 {
+      font-size: 30px;
+    }
   }
 `;
 
@@ -69,13 +83,16 @@ export const Fondo = () => {
         <h1>Pump Yacht Club</h1>
         <h2>Lets pump this fucking yacht⛵</h2>
         <div className="contenedorBoton">
-        <a href="https://poocoin.app/" rel="noreferrer" target="_blank"><Button className="boton" type="primary" size="large" style={{height: 55,
-    width: 200}}
-    
->
-            BUY NOW
-          </Button></a>
-          
+          <a href="https://poocoin.app/" rel="noreferrer" target="_blank">
+            <Button
+              className="boton"
+              type="primary"
+              size="large"
+              style={{ height: 55, width: 200 }}
+            >
+              BUY NOW
+            </Button>
+          </a>
         </div>
       </div>
     </FondoComponent>
