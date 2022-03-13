@@ -6,6 +6,7 @@ import Layout from "../components/Layout";
 const Contenedor = styled.div`
   h1 {
     font-family: "Permanent Marker", cursive;
+    text-align:center;
   }
   h2 {
     /* font-family: 'Patrick Hand', cursive; */
@@ -17,15 +18,25 @@ const Contenedor = styled.div`
 `;
 
 const ContenedorTokenomics = styled.div`
+  display: block;
+
   padding-top: 40px;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  column-gap: 3rem;
+
   max-width: 1000px;
+  width:90%;
   margin: 0 auto;
   margin-bottom: 80px;
+  @media (min-width: 768px) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 3rem;
+    .contenedorImagen{
+      margin-bottom:0;
+    }
+  }
   .contenedorImagen {
     display: flex;
+    margin-bottom:40px;
   }
   img {
     margin: auto;
@@ -37,11 +48,14 @@ const ContenedorTokenomics = styled.div`
   }
 
   .dscTokenomics {
-    text-align:start !important;
-    margin:20px 0;
+    text-align: start !important;
+    margin: 20px 0;
     display: grid;
-    column-gap: 40px;
-  grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    @media (min-width: 768px) {
+      column-gap: 40px;
+  }
   }
 `;
 export default function Home() {
@@ -66,10 +80,9 @@ export default function Home() {
             <div className="dscTokenomics">
               <h3>🐫 Token Distribution</h3>
               <span>70% Liquidity - 30% Burn </span>
-              
             </div>
             <div className="dscTokenomics">
-            <h3>🐢 Max transaction</h3>
+              <h3>🐢 Max transaction</h3>
               <span>2% </span>
             </div>
           </div>
