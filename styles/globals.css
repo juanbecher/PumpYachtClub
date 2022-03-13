@@ -1,0 +1,29 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+
+    font-family: 'Neonderthaw', cursive;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.ant-btn-primary{
+  border-color: #1890ff00 !important;
+  background: #2e4b66 !important; 
+}
+
+.ant-btn-primary:hover, .ant-btn-primary:focus{
+  border-color: #1890ff00;
+  background: #326697 !important;
+}
+
